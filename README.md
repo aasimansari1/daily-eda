@@ -15,6 +15,10 @@ daily-eda/
 │   ├── analysis.py
 │   ├── chart.png
 │   └── NOTES.md
+├── day-02/          # Wine quality — how many of those features do you need?
+│   ├── analysis.py
+│   ├── chart.png
+│   └── NOTES.md
 └── ...
 ```
 
@@ -38,6 +42,7 @@ python day-01/analysis.py
 | Day | Dataset | Question |
 |---|---|---|
 | 01 | sklearn `wine` | Which chemical features separate the three cultivars most? |
+| 02 | sklearn `wine` | How much accuracy is lost using only the top-k features? |
 
 ---
 
