@@ -60,6 +60,7 @@ seaborn `penguins`/`tips`/`titanic`/`mpg`/`diamonds`) for 57 unique days.
 |---|---|---|
 | 01 | sklearn `wine` | Which chemical features separate the three cultivars most? |
 | 02 | sklearn `wine` | How much accuracy is lost using only the top-k features? |
+| 03 | sklearn `breast_cancer` | Which features carry the most signal about the target? |
 
 ---
 
