@@ -1,0 +1,48 @@
+name: daily-eda
+
+# One real EDA per day: pick the next unused dataset/question pair, run it,
+# commit the chart and notes.
+on:
+  schedule:
+    - cron: "23 4 * * *"   # 04:23 UTC = 09:53 IST, daily
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-eda
+  cancel-in-progress: false
+
+jobs:
+  new-day:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install --quiet -r requirements.txt
+
+      - name: Generate the day
+        run: python tools/generate_day.py
+
+      - name: Commit and push
+        run: |
+          set -euo pipefail
+          git config user.name  "Mohd Aasim Ansari"
+          git config user.email "161616901+aasimansari1@users.noreply.github.com"
+          if git diff --quiet && git diff --cached --quiet && [ -z "$(git status --porcelain)" ]; then
+            echo "nothing to commit"
+            exit 0
+          fi
+          day=$(ls -d day-*/ | sort | tail -1 | tr -d '/')
+          subject=$(sed -n '1s/^# Day [0-9]* — //p' "$day/NOTES.md")
+          question=$(sed -n 's/^\*\*Question:\*\* //p' "$day/NOTES.md" | head -1)
+          git add -A
+          git commit -m "$day: ${subject%% (*} — $question"
+          git push
