@@ -62,6 +62,7 @@ seaborn `penguins`/`tips`/`titanic`/`mpg`/`diamonds`) for 57 unique days.
 | 02 | sklearn `wine` | How much accuracy is lost using only the top-k features? |
 | 03 | sklearn `breast_cancer` | Which features carry the most signal about the target? |
 | 04 | sklearn `diabetes` | Which features carry the most signal about the target? |
+| 05 | seaborn `penguins` | Which features carry the most signal about the target? |
 
 ---
 
