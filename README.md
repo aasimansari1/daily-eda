@@ -63,6 +63,7 @@ seaborn `penguins`/`tips`/`titanic`/`mpg`/`diamonds`) for 57 unique days.
 | 03 | sklearn `breast_cancer` | Which features carry the most signal about the target? |
 | 04 | sklearn `diabetes` | Which features carry the most signal about the target? |
 | 05 | seaborn `penguins` | Which features carry the most signal about the target? |
+| 06 | seaborn `titanic` | Which features carry the most signal about the target? |
 
 ---
 
