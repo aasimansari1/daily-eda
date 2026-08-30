@@ -65,6 +65,7 @@ seaborn `penguins`/`tips`/`titanic`/`mpg`/`diamonds`) for 57 unique days.
 | 05 | seaborn `penguins` | Which features carry the most signal about the target? |
 | 06 | seaborn `titanic` | Which features carry the most signal about the target? |
 | 07 | seaborn `mpg` | Which features carry the most signal about the target? |
+| 08 | seaborn `diamonds` | Which features carry the most signal about the target? |
 
 ---
 
