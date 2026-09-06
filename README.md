@@ -72,6 +72,7 @@ seaborn `penguins`/`tips`/`titanic`/`mpg`/`diamonds`) for 57 unique days.
 | 12 | sklearn `diabetes` | How much R² do you lose keeping only the top-k features? |
 | 13 | seaborn `penguins` | How much accuracy do you lose keeping only the top-k features? |
 | 14 | seaborn `titanic` | How much accuracy do you lose keeping only the top-k features? |
+| 15 | seaborn `mpg` | How much R² do you lose keeping only the top-k features? |
 
 ---
 
