@@ -74,6 +74,7 @@ seaborn `penguins`/`tips`/`titanic`/`mpg`/`diamonds`) for 57 unique days.
 | 14 | seaborn `titanic` | How much accuracy do you lose keeping only the top-k features? |
 | 15 | seaborn `mpg` | How much R² do you lose keeping only the top-k features? |
 | 16 | seaborn `diamonds` | How much R² do you lose keeping only the top-k features? |
+| 17 | sklearn `wine` | Which features are redundant with each other? |
 
 ---
 
