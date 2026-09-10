@@ -76,6 +76,7 @@ seaborn `penguins`/`tips`/`titanic`/`mpg`/`diamonds`) for 57 unique days.
 | 16 | seaborn `diamonds` | How much R² do you lose keeping only the top-k features? |
 | 17 | sklearn `wine` | Which features are redundant with each other? |
 | 18 | sklearn `iris` | Which features are redundant with each other? |
+| 19 | sklearn `breast_cancer` | Which features are redundant with each other? |
 
 ---
 
