@@ -79,6 +79,7 @@ seaborn `penguins`/`tips`/`titanic`/`mpg`/`diamonds`) for 57 unique days.
 | 19 | sklearn `breast_cancer` | Which features are redundant with each other? |
 | 20 | sklearn `diabetes` | Which features are redundant with each other? |
 | 21 | seaborn `penguins` | Which features are redundant with each other? |
+| 22 | seaborn `tips` | Which features are redundant with each other? |
 
 ---
 
