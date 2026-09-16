@@ -82,6 +82,7 @@ seaborn `penguins`/`tips`/`titanic`/`mpg`/`diamonds`) for 57 unique days.
 | 22 | seaborn `tips` | Which features are redundant with each other? |
 | 23 | seaborn `titanic` | Which features are redundant with each other? |
 | 24 | seaborn `mpg` | Which features are redundant with each other? |
+| 25 | seaborn `diamonds` | Which features are redundant with each other? |
 
 ---
 
