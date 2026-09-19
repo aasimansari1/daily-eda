@@ -85,6 +85,7 @@ seaborn `penguins`/`tips`/`titanic`/`mpg`/`diamonds`) for 57 unique days.
 | 25 | seaborn `diamonds` | Which features are redundant with each other? |
 | 26 | sklearn `wine` | How skewed are the features, and does a log transform fix the worst one? |
 | 27 | sklearn `iris` | How skewed are the features, and does a log transform fix the worst one? |
+| 28 | sklearn `breast_cancer` | How skewed are the features, and does a log transform fix the worst one? |
 
 ---
 
