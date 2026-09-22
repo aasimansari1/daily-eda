@@ -88,6 +88,7 @@ seaborn `penguins`/`tips`/`titanic`/`mpg`/`diamonds`) for 57 unique days.
 | 28 | sklearn `breast_cancer` | How skewed are the features, and does a log transform fix the worst one? |
 | 29 | sklearn `diabetes` | How skewed are the features, and does a log transform fix the worst one? |
 | 30 | seaborn `penguins` | How skewed are the features, and does a log transform fix the worst one? |
+| 31 | seaborn `tips` | How skewed are the features, and does a log transform fix the worst one? |
 
 ---
 
