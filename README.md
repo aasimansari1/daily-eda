@@ -91,6 +91,7 @@ seaborn `penguins`/`tips`/`titanic`/`mpg`/`diamonds`) for 57 unique days.
 | 31 | seaborn `tips` | How skewed are the features, and does a log transform fix the worst one? |
 | 32 | seaborn `titanic` | How skewed are the features, and does a log transform fix the worst one? |
 | 33 | seaborn `mpg` | How skewed are the features, and does a log transform fix the worst one? |
+| 34 | seaborn `diamonds` | How skewed are the features, and does a log transform fix the worst one? |
 
 ---
 
