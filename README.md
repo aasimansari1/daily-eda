@@ -93,6 +93,7 @@ seaborn `penguins`/`tips`/`titanic`/`mpg`/`diamonds`) for 57 unique days.
 | 33 | seaborn `mpg` | How skewed are the features, and does a log transform fix the worst one? |
 | 34 | seaborn `diamonds` | How skewed are the features, and does a log transform fix the worst one? |
 | 35 | sklearn `wine` | Where are the outliers, and how much do they move the summary statistics? |
+| 36 | sklearn `iris` | Where are the outliers, and how much do they move the summary statistics? |
 
 ---
 
