@@ -98,6 +98,7 @@ seaborn `penguins`/`tips`/`titanic`/`mpg`/`diamonds`) for 57 unique days.
 | 38 | sklearn `diabetes` | Where are the outliers, and how much do they move the summary statistics? |
 | 39 | seaborn `penguins` | Where are the outliers, and how much do they move the summary statistics? |
 | 40 | seaborn `tips` | Where are the outliers, and how much do they move the summary statistics? |
+| 41 | seaborn `titanic` | Where are the outliers, and how much do they move the summary statistics? |
 
 ---
 
