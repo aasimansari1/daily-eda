@@ -104,6 +104,7 @@ seaborn `penguins`/`tips`/`titanic`/`mpg`/`diamonds`) for 57 unique days.
 | 44 | seaborn `penguins` | Which categorical column splits the target most? |
 | 45 | seaborn `tips` | Which categorical column splits the target most? |
 | 46 | seaborn `titanic` | Which categorical column splits the target most? |
+| 47 | seaborn `mpg` | Which categorical column splits the target most? |
 
 ---
 
