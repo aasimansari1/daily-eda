@@ -106,6 +106,7 @@ seaborn `penguins`/`tips`/`titanic`/`mpg`/`diamonds`) for 57 unique days.
 | 46 | seaborn `titanic` | Which categorical column splits the target most? |
 | 47 | seaborn `mpg` | Which categorical column splits the target most? |
 | 48 | seaborn `diamonds` | Which categorical column splits the target most? |
+| 49 | sklearn `wine` | How much of the data does the model actually need? |
 
 ---
 
