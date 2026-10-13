@@ -109,6 +109,7 @@ seaborn `penguins`/`tips`/`titanic`/`mpg`/`diamonds`) for 57 unique days.
 | 49 | sklearn `wine` | How much of the data does the model actually need? |
 | 50 | sklearn `iris` | How much of the data does the model actually need? |
 | 51 | sklearn `breast_cancer` | How much of the data does the model actually need? |
+| 52 | sklearn `diabetes` | How much of the data does the model actually need? |
 
 ---
 
