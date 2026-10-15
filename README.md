@@ -111,6 +111,7 @@ seaborn `penguins`/`tips`/`titanic`/`mpg`/`diamonds`) for 57 unique days.
 | 51 | sklearn `breast_cancer` | How much of the data does the model actually need? |
 | 52 | sklearn `diabetes` | How much of the data does the model actually need? |
 | 53 | seaborn `penguins` | How much of the data does the model actually need? |
+| 54 | seaborn `tips` | How much of the data does the model actually need? |
 
 ---
 
