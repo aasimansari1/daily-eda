@@ -114,6 +114,7 @@ seaborn `penguins`/`tips`/`titanic`/`mpg`/`diamonds`) for 57 unique days.
 | 54 | seaborn `tips` | How much of the data does the model actually need? |
 | 55 | seaborn `titanic` | How much of the data does the model actually need? |
 | 56 | seaborn `mpg` | How much of the data does the model actually need? |
+| 57 | seaborn `diamonds` | How much of the data does the model actually need? |
 
 ---
 
