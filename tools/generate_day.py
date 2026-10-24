@@ -3,6 +3,7 @@
 Usage:
     python tools/generate_day.py            # create the next day
     python tools/generate_day.py --dry-run  # pick + run it, write nothing
+    python tools/generate_day.py --capacity # how many unused pairs are left
 """
 from __future__ import annotations
 
@@ -61,9 +62,26 @@ def existing_days() -> list[int]:
 def used_pairs() -> set[tuple[str, str]]:
     pairs = set()
     for p in REPO.glob("day-*/analysis.py"):
-        if m := USED_RE.search(p.read_text()):
+        if m := USED_RE.search(p.read_text(encoding="utf-8")):
             pairs.add((m.group(1), m.group(2)))
     return pairs
+
+
+def unused(used: set[tuple[str, str]] | None = None) -> list[tuple[str, str]]:
+    """Every (dataset, analysis) pair that is valid and has not been a day yet."""
+    used = used_pairs() if used is None else used
+    datasets = [d for d in eda.DATASETS if eda.available(d)]
+    left = []
+    for analysis in eda.ANALYSES:
+        for dataset in datasets:
+            if (dataset, analysis) in used:
+                continue
+            try:
+                if eda.valid(dataset, analysis):
+                    left.append((dataset, analysis))
+            except Exception as exc:
+                print(f"skip {dataset}/{analysis}: {exc}", file=sys.stderr)
+    return left
 
 
 def pick(day: int) -> tuple[str, str]:
@@ -85,25 +103,36 @@ def pick(day: int) -> tuple[str, str]:
                 return dataset, analysis
         except Exception as exc:  # a dataset that fails to load or analyse
             print(f"skip {dataset}/{analysis}: {exc}", file=sys.stderr)
-    raise SystemExit("every dataset/analysis combination has been used")
+    raise SystemExit(
+        "every valid dataset/analysis combination has been used — "
+        "add a loader to eda.DATASETS or an analysis to eda.ANALYSES to keep going")
 
 
 def update_readme(day: int, title: str, question: str) -> None:
     readme = REPO / "README.md"
-    text = readme.read_text()
+    text = readme.read_text(encoding="utf-8")
     row = f"| {day:02d} | {title} | {question} |"
     if row in text:
         return
     lines = text.rstrip().split("\n")
     last = max(i for i, ln in enumerate(lines) if ln.startswith("| "))
     lines.insert(last + 1, row)
-    readme.write_text("\n".join(lines) + "\n")
+    readme.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("--capacity", action="store_true",
+                    help="print how many unused pairs are left and exit")
     args = ap.parse_args()
+
+    if args.capacity:
+        left = unused()
+        print(f"{len(left)} unused dataset/analysis pairs left")
+        for dataset, analysis in left:
+            print(f"  {dataset} / {analysis}")
+        return
 
     day = (max(existing_days()) + 1) if existing_days() else 1
     dataset, analysis = pick(day)
@@ -121,12 +150,14 @@ def main() -> None:
 
     fields = dict(day=day, title=ds.title, shape=ds.shape_line(), dataset=dataset,
                   analysis=analysis, question=result.question)
-    (out / "analysis.py").write_text(ANALYSIS_FILE.format(**fields))
+    (out / "analysis.py").write_text(ANALYSIS_FILE.format(**fields), encoding="utf-8")
     (out / "NOTES.md").write_text(NOTES_FILE.format(
         **fields, method=result.method, next_question=result.next_question,
-        i1=result.insights[0], i2=result.insights[1], i3=result.insights[2]))
+        i1=result.insights[0], i2=result.insights[1], i3=result.insights[2]),
+        encoding="utf-8")
     update_readme(day, ds.title, result.question)
     print(f"\nwrote {out.relative_to(REPO)}/ and updated README.md")
+    print(f"{len(unused())} unused dataset/analysis pairs left after today")
 
 
 if __name__ == "__main__":

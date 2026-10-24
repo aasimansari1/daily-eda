@@ -40,7 +40,7 @@ jobs:
             echo "nothing to commit"
             exit 0
           fi
-          day=$(ls -d day-*/ | sort | tail -1 | tr -d '/')
+          day=$(ls -d day-*/ | sort -V | tail -1 | tr -d '/')   # -V so day-100 beats day-99
           subject=$(sed -n '1s/^# Day [0-9]* — //p' "$day/NOTES.md")
           question=$(sed -n 's/^\*\*Question:\*\* //p' "$day/NOTES.md" | head -1)
           git add -A

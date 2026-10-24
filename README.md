@@ -117,6 +117,7 @@ seaborn `penguins`/`tips`/`titanic`/`mpg`/`diamonds`) for 57 unique days.
 | 57 | seaborn `diamonds` | How much of the data does the model actually need? |
 | 58 | sklearn `wine` | Which features carry the most signal about the target? |
 | 59 | sklearn `iris` | Which features carry the most signal about the target? |
+| 60 | sklearn `digits` | Where are the outliers, and how much do they move the summary statistics? |
 
 ---
 
