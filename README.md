@@ -120,6 +120,7 @@ seaborn `penguins`/`tips`/`titanic`/`mpg`/`diamonds`) for 57 unique days.
 | 60 | sklearn `digits` | Where are the outliers, and how much do they move the summary statistics? |
 | 61 | sklearn `california_housing` | Where are the outliers, and how much do they move the summary statistics? |
 | 62 | seaborn `taxis` | Where are the outliers, and how much do they move the summary statistics? |
+| 63 | seaborn `planets` | Where are the outliers, and how much do they move the summary statistics? |
 
 ---
 
