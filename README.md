@@ -123,6 +123,7 @@ seaborn `penguins`/`tips`/`titanic`/`mpg`/`diamonds`) for 57 unique days.
 | 63 | seaborn `planets` | Where are the outliers, and how much do they move the summary statistics? |
 | 64 | seaborn `car_crashes` | Where are the outliers, and how much do they move the summary statistics? |
 | 65 | seaborn `taxis` | Which categorical column splits the target most? |
+| 66 | seaborn `planets` | Which categorical column splits the target most? |
 
 ---
 
