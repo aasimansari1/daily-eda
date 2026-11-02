@@ -126,6 +126,7 @@ seaborn `penguins`/`tips`/`titanic`/`mpg`/`diamonds`) for 57 unique days.
 | 66 | seaborn `planets` | Which categorical column splits the target most? |
 | 67 | sklearn `digits` | How much of the data does the model actually need? |
 | 68 | sklearn `california_housing` | How much of the data does the model actually need? |
+| 69 | seaborn `taxis` | How much of the data does the model actually need? |
 
 ---
 
