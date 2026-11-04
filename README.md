@@ -128,6 +128,7 @@ seaborn `penguins`/`tips`/`titanic`/`mpg`/`diamonds`) for 57 unique days.
 | 68 | sklearn `california_housing` | How much of the data does the model actually need? |
 | 69 | seaborn `taxis` | How much of the data does the model actually need? |
 | 70 | seaborn `planets` | How much of the data does the model actually need? |
+| 71 | seaborn `car_crashes` | How much of the data does the model actually need? |
 
 ---
 
