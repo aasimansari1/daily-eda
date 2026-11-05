@@ -129,6 +129,7 @@ seaborn `penguins`/`tips`/`titanic`/`mpg`/`diamonds`) for 57 unique days.
 | 69 | seaborn `taxis` | How much of the data does the model actually need? |
 | 70 | seaborn `planets` | How much of the data does the model actually need? |
 | 71 | seaborn `car_crashes` | How much of the data does the model actually need? |
+| 72 | sklearn `wine` | Do the top-ranked features stay on top once a model sees them together? |
 
 ---
 
