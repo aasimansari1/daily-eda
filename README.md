@@ -131,6 +131,7 @@ seaborn `penguins`/`tips`/`titanic`/`mpg`/`diamonds`) for 57 unique days.
 | 71 | seaborn `car_crashes` | How much of the data does the model actually need? |
 | 72 | sklearn `wine` | Do the top-ranked features stay on top once a model sees them together? |
 | 73 | sklearn `iris` | Do the top-ranked features stay on top once a model sees them together? |
+| 74 | sklearn `breast_cancer` | Do the top-ranked features stay on top once a model sees them together? |
 
 ---
 
