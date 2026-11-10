@@ -134,6 +134,7 @@ seaborn `penguins`/`tips`/`titanic`/`mpg`/`diamonds`) for 57 unique days.
 | 74 | sklearn `breast_cancer` | Do the top-ranked features stay on top once a model sees them together? |
 | 75 | sklearn `diabetes` | Do the top-ranked features stay on top once a model sees them together? |
 | 76 | sklearn `digits` | Do the top-ranked features stay on top once a model sees them together? |
+| 77 | sklearn `california_housing` | Do the top-ranked features stay on top once a model sees them together? |
 
 ---
 
