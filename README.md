@@ -140,6 +140,7 @@ seaborn `penguins`/`tips`/`titanic`/`mpg`/`diamonds`) for 57 unique days.
 | 80 | seaborn `mpg` | Do the top-ranked features stay on top once a model sees them together? |
 | 81 | seaborn `diamonds` | Do the top-ranked features stay on top once a model sees them together? |
 | 82 | seaborn `taxis` | Do the top-ranked features stay on top once a model sees them together? |
+| 83 | seaborn `planets` | Do the top-ranked features stay on top once a model sees them together? |
 
 ---
 
