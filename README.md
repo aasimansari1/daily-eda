@@ -144,6 +144,7 @@ seaborn `penguins`/`tips`/`titanic`/`mpg`/`diamonds`) for 57 unique days.
 | 84 | seaborn `car_crashes` | Do the top-ranked features stay on top once a model sees them together? |
 | 85 | sklearn `wine` | Would recursive feature elimination find a better subset of the same size? |
 | 86 | sklearn `iris` | Would recursive feature elimination find a better subset of the same size? |
+| 87 | sklearn `breast_cancer` | Would recursive feature elimination find a better subset of the same size? |
 
 ---
 
