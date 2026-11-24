@@ -148,6 +148,7 @@ seaborn `penguins`/`tips`/`titanic`/`mpg`/`diamonds`) for 57 unique days.
 | 88 | sklearn `diabetes` | Would recursive feature elimination find a better subset of the same size? |
 | 89 | sklearn `digits` | Would recursive feature elimination find a better subset of the same size? |
 | 90 | sklearn `california_housing` | Would recursive feature elimination find a better subset of the same size? |
+| 91 | seaborn `penguins` | Would recursive feature elimination find a better subset of the same size? |
 
 ---
 
