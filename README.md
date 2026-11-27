@@ -151,6 +151,7 @@ seaborn `penguins`/`tips`/`titanic`/`mpg`/`diamonds`) for 57 unique days.
 | 91 | seaborn `penguins` | Would recursive feature elimination find a better subset of the same size? |
 | 92 | seaborn `titanic` | Would recursive feature elimination find a better subset of the same size? |
 | 93 | seaborn `mpg` | Would recursive feature elimination find a better subset of the same size? |
+| 94 | seaborn `diamonds` | Would recursive feature elimination find a better subset of the same size? |
 
 ---
 
